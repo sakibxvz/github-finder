@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 
 class Serach extends Component {
   state = {
     text: "",
+  };
+  static propTypes = {
+    searchUsers:PropTypes.func.isRequired,
   };
   onSubmit = (event) => {
     event.preventDefault();
